@@ -1,4 +1,22 @@
-# foundry-iq-toolkit
+<!-- jr-brand:start -->
+<div align="center">
+  <a href="https://jannikreinhard.com/">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/tool.svg" alt="Jannik Reinhard — AI, Cloud and Endpoint Management" width="100%">
+  </a>
+  <h1>Microsoft Foundry IQ Toolkit</h1>
+  <p><strong>CLI for Foundry IQ: create knowledge sources and knowledge bases on Azure AI Search, test agentic retrieval, and wire them into Microsoft Foundry agents via MCP.</strong></p>
+  <p>
+  <a href="https://jannikreinhard.com/"><img src="https://img.shields.io/badge/Website-0A5FC0?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="Website"></a>
+  <a href="https://github.com/JayRHa"><img src="https://img.shields.io/badge/GitHub-081427?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/jannik-r/"><img src="https://img.shields.io/badge/LinkedIn-0795FF?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
+  <a href="https://x.com/jannik_reinhard"><img src="https://img.shields.io/badge/X-081427?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X"></a>
+  <a href="https://www.youtube.com/@ModernDevMgmt/featured"><img src="https://img.shields.io/badge/YouTube-0A5FC0?style=flat-square&amp;logo=youtube&amp;logoColor=white" alt="YouTube"></a>
+</p>
+  <p><sub>Tool · App · CLI · Python · Practical by design</sub></p>
+</div>
+<!-- jr-brand:end -->
+
+## Overview
 
 A small CLI for **Foundry IQ** — create knowledge sources and knowledge bases
 on Azure AI Search, test agentic retrieval from the terminal, and print the
@@ -9,7 +27,7 @@ that any number of agents can share. The plumbing is a handful of REST calls —
 this toolkit wraps them so you can go from a blob container to a queryable
 knowledge base in minutes.
 
-## What it does
+## What It Does
 
 ```text
 foundry_iq.py create-source   Create a blob knowledge source (auto chunking + vectorization)
@@ -55,7 +73,7 @@ python foundry_iq.py retrieve my-kb "How do we onboard a new device?"
 python foundry_iq.py mcp-endpoint my-kb
 ```
 
-## How the pieces fit
+## How the Pieces Fit
 
 1. A **knowledge source** ingests your data into a search index (chunking,
    vectorization and refresh handled by the generated pipeline).
@@ -66,7 +84,7 @@ python foundry_iq.py mcp-endpoint my-kb
    tool `knowledge_base_retrieve` — from Foundry Agent Service, the Agent
    Framework, or any MCP-capable client.
 
-## Cost notes
+## Cost Notes
 
 Agentic retrieval bills reranking tokens on Azure AI Search plus LLM tokens
 for query planning / answer synthesis. Biggest lever is the reasoning effort:
@@ -92,3 +110,15 @@ check the pinned api-version if a call starts failing.
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+<!-- jr-brand-footer:start -->
+
+---
+
+<div align="center">
+  <p><sub>Built and maintained by <a href="https://jannikreinhard.com/">Jannik Reinhard</a> · Microsoft MVP for Security and AI Platform.</sub></p>
+  <p><a href="https://www.buymeacoffee.com/jannikreinf">Support the open-source work</a></p>
+  <p><strong>Stay healthy, Cheers Jannik</strong></p>
+</div>
+
+<!-- jr-brand-footer:end -->
