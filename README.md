@@ -1,22 +1,24 @@
 <!-- jr-brand:start -->
-<div align="center">
+<p align="center">
   <a href="https://jannikreinhard.com/">
-    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — Driving AI with passion" width="100%">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — I help enterprises ship secure AI agents" width="100%">
   </a>
-  <h1>Microsoft Foundry IQ Toolkit</h1>
-  <p><strong>CLI for Foundry IQ: create knowledge sources and knowledge bases on Azure AI Search, test agentic retrieval, and wire them into Microsoft Foundry agents via MCP.</strong></p>
-  <p>
-  <a href="https://jannikreinhard.com/"><img src="https://img.shields.io/badge/Website-146CDD?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="Website"></a>
-  <a href="https://github.com/JayRHa"><img src="https://img.shields.io/badge/GitHub-081427?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
-  <a href="https://www.linkedin.com/in/jannik-r/"><img src="https://img.shields.io/badge/LinkedIn-0795FF?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
-  <a href="https://x.com/jannik_reinhard"><img src="https://img.shields.io/badge/X-081427?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X"></a>
-  <a href="https://www.youtube.com/@jannikreinhard"><img src="https://img.shields.io/badge/YouTube-146CDD?style=flat-square&amp;logo=youtube&amp;logoColor=white" alt="YouTube"></a>
-  </p>
-  <p><sub>Driving AI with passion · Microsoft Foundry · Intune · Azure</sub></p>
-</div>
+</p>
+<p align="center">
+  <a href="https://jannikreinhard.com/">Website</a> ·
+  <a href="https://www.linkedin.com/in/jannik-r/">LinkedIn</a> ·
+  <a href="https://x.com/jannik_reinhard">X</a> ·
+  <a href="https://www.youtube.com/@jannikreinhard">YouTube</a>
+</p>
 <!-- jr-brand:end -->
 
+# Foundry IQ toolkit
+
+**Type:** Tool or application · **Status:** Community project
+
 ## Overview
+
+CLI for Foundry IQ: create knowledge sources and knowledge bases on Azure AI Search, test agentic retrieval, and wire them into Microsoft Foundry agents via MCP.
 
 A small CLI for **Foundry IQ** — create knowledge sources and knowledge bases
 on Azure AI Search, test agentic retrieval from the terminal, and print the
@@ -27,18 +29,9 @@ that any number of agents can share. The plumbing is a handful of REST calls —
 this toolkit wraps them so you can go from a blob container to a queryable
 knowledge base in minutes.
 
-## What It Does
+<a id="prerequisites"></a>
 
-```text
-foundry_iq.py create-source   Create a blob knowledge source (auto chunking + vectorization)
-foundry_iq.py create-kb       Create a knowledge base over one or more sources
-foundry_iq.py retrieve        Ask a question against the knowledge base (agentic retrieval)
-foundry_iq.py status          Show ingestion status of a knowledge source
-foundry_iq.py mcp-endpoint    Print the MCP endpoint + agent wiring snippet
-foundry_iq.py list            List knowledge sources and knowledge bases
-```
-
-## Prerequisites
+## Requirements
 
 - Python 3.10+
 - An **Azure AI Search** service (Basic tier or higher recommended)
@@ -71,6 +64,17 @@ python foundry_iq.py retrieve my-kb "How do we onboard a new device?"
 
 # 4. wire it into an agent
 python foundry_iq.py mcp-endpoint my-kb
+```
+
+## What It Does
+
+```text
+foundry_iq.py create-source   Create a blob knowledge source (auto chunking + vectorization)
+foundry_iq.py create-kb       Create a knowledge base over one or more sources
+foundry_iq.py retrieve        Ask a question against the knowledge base (agentic retrieval)
+foundry_iq.py status          Show ingestion status of a knowledge source
+foundry_iq.py mcp-endpoint    Print the MCP endpoint + agent wiring snippet
+foundry_iq.py list            List knowledge sources and knowledge bases
 ```
 
 ## How the Pieces Fit
@@ -112,13 +116,7 @@ check the pinned api-version if a call starts failing.
 MIT — see [LICENSE](LICENSE).
 
 <!-- jr-brand-footer:start -->
-
 ---
 
-<div align="center">
-  <p><sub>Built and maintained by <a href="https://jannikreinhard.com/">Jannik Reinhard</a> · Microsoft MVP for Security and AI Platform.</sub></p>
-  <p><a href="https://www.buymeacoffee.com/jannikreinf">Support the open-source work</a></p>
-  <p><strong>Stay healthy, Cheers Jannik</strong></p>
-</div>
-
+[Articles and guides](https://jannikreinhard.com/) · [Repository index](https://github.com/JayRHa/.github/blob/main/REPOSITORIES.md)
 <!-- jr-brand-footer:end -->
